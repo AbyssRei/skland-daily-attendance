@@ -1,0 +1,13 @@
+name = "skland-daily-attendance"
+compatibility_date = "2025-04-04"
+main = "./src/worker.ts"
+
+[observability]
+enabled = true
+
+[triggers]
+crons = ["30 0/2 * * *"]
+
+[[kv_namespaces]]
+binding = "SKLAND_DAILY_ATTENDANCE_STORAGE"
+id = "5f6e7ffdfa2540d4837011f8cade56f1"
